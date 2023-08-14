@@ -21,17 +21,22 @@ console.table(drinkEven);
 
 // 5. Print the total if you were to order one of every drink. //
 
-const totalDrinkPrice = coffeeMenu.reduce(coffeeMenu => coffeeMenu.price + total,0);
+const totalDrinkPrice = coffeeMenu.reduce([coffeeMenu.price + 0]);
 
-console.log(totalDrinkPrice)
+console.log(totalDrinkPrice);
 
 // 6. Print an array with all the drinks that are seasonal. //
+
 const seasonalArray = coffeeMenu.filter(coffee => coffee.seasonal === true);
 
 console.log(seasonalArray);
 
 // 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans" //
 
-const seasonalDrinksWithWords = coffeeMenu.map(coffeeMenu => coffeeMenu.name+("with imported beans"));
+const seasonalDrinksWithWords = (coffeeMenu) => {
+    return coffeeMenu.name+(" with imported beans ")};
 
-console.table(seasonalDrinksWithWords);
+const seasonalDrinks = coffeeMenu.map(seasonalDrinksWithWords);
+
+console.table(seasonalDrinks);
+
