@@ -22,7 +22,7 @@ console.table(drinkEven);
 // 5. Print the total if you were to order one of every drink. //
 
 const totalDrinkPrice = (coffeeMenu) => {
-    return coffeeMenu.reduce(sumTotal) + 0 };
+    return coffeeMenu.reduce(sumTotal) = coffeeMenu + 0 };
 
 console.log(totalDrinkPrice);
 
