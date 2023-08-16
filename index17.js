@@ -21,10 +21,14 @@ console.table(drinkEven);
 
 // 5. Print the total if you were to order one of every drink. //
 
-const totalDrinkPrice = (coffeeMenu) => {
-    return coffeeMenu.reduce(sumTotal) = coffeeMenu + coffeeMenu.price };
+const priceArray = coffeeMenu.map(item => item.price);
 
-console.log(totalDrinkPrice);
+console.table(priceArray);
+
+const totalPrice = priceArray.reduce(
+    (accumulater, currentValue) => accumulater + currentValue, 0
+)
+console.log(totalPrice);
 
 // 6. Print an array with all the drinks that are seasonal. //
 
