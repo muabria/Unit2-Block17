@@ -38,10 +38,6 @@ console.log(seasonalArray);
 
 // 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans" //
 
-const seasonalDrinksWithWords = (coffeeMenu) => {
-    return coffeeMenu.name+(" with imported beans ")};
+const seasonalDrinkWithWords = coffeeMenu.map(coffee => coffee.name+" with imported beans");
 
-const seasonalDrinks = coffeeMenu.map(seasonalDrinksWithWords);
-
-console.table(seasonalDrinks);
-
+console.log(seasonalDrinkWithWords);
