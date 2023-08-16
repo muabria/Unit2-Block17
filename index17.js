@@ -28,7 +28,7 @@ console.table(priceArray);
 const totalPrice = priceArray.reduce(
     (accumulater, currentValue) => accumulater + currentValue, 0
 )
-console.log(totalPrice);
+console.log("the total price is $",totalPrice);
 
 // 6. Print an array with all the drinks that are seasonal. //
 
